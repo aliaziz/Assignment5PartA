@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Assignment5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kotlin_strings_are_mutable">1. Kotlin Strings are mutable</string>
+    <string name="none_of_the_above">None of the above</string>
+    <string name="true_choice">True</string>
+    <string name="false_choice">False</string>
+    <string name="_2_ways_to_handle_null_safety_in_kotlin">2. Ways to handle null safety in Kotlin</string>
+    <string name="elvis_operator">Elvis operator(?:)</string>
+    <string name="using_the_when_operator">Using the when operator</string>
+    <string name="using_a_safe_call_operator">Using a safe call operator (?.)</string>
+    <string name="clear">Clear</string>
+    <string name="submit">Submit</string>
+</resources>

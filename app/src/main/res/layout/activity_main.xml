@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/question_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kotlin_strings_are_mutable"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/qn_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/question_one"
+        app:layout_constraintTop_toBottomOf="@id/question_one">
+
+        <RadioButton
+            android:id="@+id/true_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_choice" />
+
+        <RadioButton
+            android:id="@+id/false_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_choice" />
+
+        <RadioButton
+            android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none_of_the_above" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/_2_ways_to_handle_null_safety_in_kotlin"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/qn_radio_group" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/question_two">
+
+        <CheckBox
+            android:id="@+id/elvis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elvis_operator" />
+
+        <CheckBox
+            android:id="@+id/when_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/using_the_when_operator" />
+
+        <CheckBox
+            android:id="@+id/safe_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/using_a_safe_call_operator" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        style="?android:attr/selectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:textColor="@color/purple_500"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/submit_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="?android:attr/selectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
